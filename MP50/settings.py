@@ -40,17 +40,18 @@ INSTALLED_APPS = [
     'django.contrib.sites', # new
 
 # Third-party 
-    'crispy_forms', # new
-    'allauth', # new 
-    'allauth.account', # new
+    'crispy_forms',
+    'allauth',
+    'allauth.account',
 
 # Local
-    'users.apps.UsersConfig', # new
-    'staticpages.apps.StaticpagesConfig', # new    
+    'users.apps.UsersConfig',
+    'staticpages.apps.StaticpagesConfig',
+    'quotes.apps.QuotesConfig',
 ]
 
 # django-allauth config 
-SITE_ID = 1 # new
+SITE_ID = 2 # new
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

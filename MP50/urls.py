@@ -25,3 +25,8 @@ urlpatterns = [
 # Local apps
     path('', include('staticpages.urls')),
 ]
+
+# change the 'Django Administration' text
+admin.site.site_header = "MP50 Administration" 
+admin.site.site_title = "MP50 Admin Portal" 
+admin.site.index_title = "Welcome to MP50 Portal"
