@@ -20,10 +20,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
 # User management
-    path('accounts/', include('allauth.urls')), #new
+    path('accounts/', include('allauth.urls')),
 
 # Local apps
     path('', include('staticpages.urls')),
+    path('quotes/', include('quotes.urls')), # new
 ]
 
 # change the 'Django Administration' text
