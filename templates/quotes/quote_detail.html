@@ -1,0 +1,20 @@
+{% extends '_base.html' %}
+
+{% block title %}{{ quote.keyword }}{% endblock title %}
+
+{% block content %}
+<!-- View Bootstrap carousel with quotes at 
+  https://jsfiddle.net/bootstrapious/tqagdo0z 
+  https://bootstrapious.com/p/bootstrap-carousel-with-quotes -->
+<div class="quote-detail">
+  <blockquote class="blockquote mb-0">
+    <h2><a href="">{{ quote.title }}</a></h2>
+    <p>{{ quote.quote }}</p>
+    <footer class="blockquote-footer"><i>
+        <a href="{{ quote.reference }}">{{ quote.author }}, {{ quote.year }}</i></a></footer>
+    <!-- https://getbootstrap.com/docs/4.0/utilities/text/ 
+ very good book django 3 examples https://books.google.nl/books?id=y83aDwAAQBAJ&pg=PA404&lpg=PA404&dq=how+to+use+a+class+content+in+%3Ca+href%3D%22%22%3E+in+Django+3&source=bl&ots=j4AQBckms1&sig=ACfU3U0LleyYUFhK5T8R4FvHqMmNPqg67g&hl=en&sa=X&ved=2ahUKEwiepK_CsOLoAhXK2aQKHQwFBwQQ6AEwBXoECAwQKA#v=onepage&q=URL&f=false
+ -->
+  </blockquote>
+</div>
+{% endblock content %}

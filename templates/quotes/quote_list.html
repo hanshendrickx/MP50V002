@@ -3,9 +3,9 @@
 {% block title %}Quotes{% endblock title %}
 
 {% block content %}
-{% for book in object_list %}
-<div>
-    <h2><a href="">{{ quote.title }}</a></h2>
-</div>
-{% endfor %}
+  {% for quote in quote_list %}
+    <div>
+      <h2><a href="{{ quote.get_absolute_url }}">{{ quote.subject }}</a></h2>
+    </div>
+  {% endfor %}
 {% endblock content %}
